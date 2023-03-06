@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "vercel-build": "npx prisma migrate deploy",
     "dev": "tsx watch src/server.ts",
     "migration": "prisma migrate dev",
     "prisma": "prisma studio"
