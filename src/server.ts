@@ -1,10 +1,12 @@
 import  Fastify  from 'fastify';
 import cors from '@fastify/cors';
+import formBody  from "@fastify/formbody"
 import { appRoutes } from './routes';
 
 const app = Fastify()
 
 app.register(cors)
+app.register(formBody)
 app.register(appRoutes)
 
 
