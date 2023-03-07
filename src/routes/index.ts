@@ -121,6 +121,7 @@ export async function appRoutes(app:FastifyInstance){
         }
       })
     }
+    return dayHabit
   })
 
   app.get('/summary',async ()=>{
